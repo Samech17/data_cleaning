@@ -1,0 +1,48 @@
+Date,ID,Name,Region,Rating,Product,Quantity,Price Per Unit,Total Value
+1/31/21 0:00,1,John Smith   ,North,Good,Magic Wand,10,$20.00 ,$200.00
+2/28/21 0:00,2,Jane Doe,East,Excelent,Unicorn Horn,15,$10.00 ,$150.00
+4/30/21 0:00,3,Anna   Belle,South,Average,Fairy Dust,25,$10.00 ,$250.00
+5/31/21 0:00,4,Chris P. Bacon,East,Good,Bacon Scented Candle,30,$16.67 ,$500.10
+7/31/21 0:00,5,Mary Jane,West,Poor,Potent Potion,35,$10.00 ,$350.00
+8/31/21 0:00,6,Bruce Wayne,South,Average,Bat Signal,40,$15.00 ,$600.00
+9/30/21 0:00,7,Clark Kent,East,Good,Glasses with X-ray Vision,45,$12.22 ,$549.90
+10/31/21 0:00,8,Diana Prince,North,Excelent,Lasso of Truth,50,$14.00 ,$700.00
+11/30/21 0:00,9,Tony Stark,West,Poor,Iron Man Suit,5,$160.00 ,$800.00
+12/31/21 0:00,10,Steve Rogers,South,Average,Captain America Shield,20,$45.00 ,$900.00
+2/28/22 0:00,11,Bruce Banner,South,Excelent,Gamma Radiation Serum,30,$36.67 ,"$1,100.10"
+4/30/21 0:00,12,Anna   Belle,South,Average,Fairy Dust,25,$10.00 ,$250.00
+5/31/21 0:00,13,Chris P. Bacon,East,Good,Bacon Scented Candle,30,$16.67 ,$500.10
+3/31/22 0:00,14,Nick Fury,West,Poor,Eye Patch,35,$34.29 ,"$1,200.15"
+5/31/22 0:00,15,Peggy Carter,East,Good,Vintage Pistol,40,$35.00 ,"$1,400.00"
+6/30/22 0:00,16,Howard Stark,North,Excelent,Arc Reactor,45,$33.33 ,"$1,499.85"
+7/31/22 0:00,17,Hank Pym,West,Poor,Ant-Man Suit,50,$32.00 ,"$1,600.00"
+8/31/22 0:00,18,Janet van Dyne,South,Average,Wasp's Wings,55,$30.91 ,"$1,700.05"
+9/30/22 0:00,19,Kurt Busiek,East,Good,Comic Book,60,$30.00 ,"$1,800.00"
+11/30/22 0:00,20,Roger Stern,West,Poor,Notepads,65,$30.77 ,"$2,000.05"
+12/31/22 0:00,21,Tom DeFalco,South,Average,Pen Set,70,$30.00 ,"$2,100.00"
+1/31/23 0:00,22,Loki Laufeyson,South,Mischief,Trickster's Hat,75,$29.33 ,"$2,199.75"
+2/28/23 0:00,23,Thor Odinson,South,Worthy,Mjolnir,80,$28.75 ,"$2,300.00"
+4/30/23 0:00,24,Steve Rogers,South,Leader,Leadership Manual,85,$29.41 ,"$2,499.85"
+,,,,,,,,
+Region,Quantity ,Total Value ,,,,,,
+East,220,"$4,900.10",,,,,,
+North,105,"$2,399.85",,,,,,
+South,505,"$13,899.75",,,,,,
+West,190,"$5,950.20",,,,,,
+Grand Total,1020,"$27,149.90",,,,,,
+,,,,,,,,
+,,,,,,,,
+Data Cleaning and Analysis Report,,,,,,,,
+,,,,,,,,
+Objective:,,,,,,,,
+"The goal of this project was to clean and analyze the dataset by removing duplicate IDs, handling infinite values in the Price Per Unit column, and performing a regional analysis to determine the total quantity sold and total value per region.",,,,,,,,
+,,,,,,,,
+Step Taken:,,,,,,,,
+1. The dataset was checked for duplicate entries based on the ID column,,,,,,,,
+"2. Using the ""Remove Duplicates"" feature, duplicate records were eliminated to ensure data integrity.",,,,,,,,
+"3. The ""Price Per Unit"" column was examined for any occurrences of the value ""inf"".",,,,,,,,
+"4. Rows containing ""inf"" were removed by applying filter to the price column and delete the row that contains ""inf""",,,,,,,,
+"5. A new column, ""Total Value"", was created using the formula: =Quantity * Price Per Unit.",,,,,,,,
+6. The data was converted into a table and renamed,,,,,,,,
+6. A Pivot Table was generated to summarize total quantity sold and total value for each region.,,,,,,,,
+7. A short report explaining your steps and insights from the cleaned data.,,,,,,,,
